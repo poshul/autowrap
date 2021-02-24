@@ -237,8 +237,8 @@ class VoidConverter(TypeConverterBase):
         raise NotImplementedError("void has no matching python type")
 
     def type_check_expression(self, cpp_type, argument_var):
-        raise NotImplementedError("void has no matching python type")
-
+        raise NotImplementedError("void has no matching python type from cpp_type: " + cpp_type + " and argument_var: " + argument_var )
+    
     def input_conversion(self, cpp_type, argument_var, arg_num):
         raise NotImplementedError("void has no matching python type")
 
